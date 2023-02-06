@@ -1,0 +1,167 @@
+\documentclass[a4paper]{MagicalCV}
+
+% Removing page numbers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+% Change the geometry
+\geometry{left=1.2cm, top=.8cm, right=1.2cm, bottom=0.8cm, footskip=.5cm}
+
+% Defining your colors
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-purple}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% start document
+\begin{document}
+
+% Title name
+\namesection{Sachin}{Apiah}{
+\phone{+1 408 714 9554} \email{\href{mailto:sachinapiah20@gmail.com}{sachinapiah20@gmail.com}}}
+
+% Column one
+\begin{minipage}[t]{0.33\textwidth} 
+
+% Education
+\cvsection{Education} 
+
+\subsection{University of Waterloo}
+\descript{BS in Mechatronics Engineering}
+\cvevent{April 2021}{Waterloo, Canada} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\sectionsep
+
+% Links
+\cvsection{Links}
+
+\github{GitHub} \href{https://github.com/sapiah}{\bf sapiah} \\
+\linkedin{Linkedin} \href{https://www.linkedin.com/in/sapiah/}{\bf sapiah}
+\sectionsep
+
+% Coursework
+\cvsection{Coursework}
+
+Algorithms and Data Structures \\
+Experimental Measurements and Statistical Analysis \\
+Microprocessors and Digital Logic \\
+Computer Structures and Real-Time Systems \\
+Database Systems \\
+Co-operative and Adaptive Algorithms \\
+Digital Control Systems \\ 
+Software Design and Architectures \\
+Machine Intelligence \\ 
+\sectionsep
+
+% Skills
+\cvsection{Skills}
+
+\subsection{Programming}
+Java \textbullet{}   Kotlin \textbullet{} Python \textbullet{} C/C++ \textbullet{} SQL  \textbullet{}
+VBscript \textbullet{} MATLAB 
+\sectionsep
+\subsection{Frameworks \& Libraries}
+Android Jetpack \textbullet{} Flux-Redux \textbullet{} Retrofit \textbullet{} OkHTTP3 \textbullet{} RxJava \textbullet{} Coroutine\textbullet{} Glide \textbullet{} Koin\textbullet{} Room \textbullet{} JUnit-Mockito-Roboelectric \textbullet{} Spotify \& Google Maps API  \textbullet{} Spring \textbullet{} Firebase \textbullet{} Git
+\sectionsep
+
+% % Honors
+% \cvsection{Honors} 
+
+% \subsection{Excellence Scholarship}
+% \descript{University of leeds}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% Awarded to international students who have achieved the equivalent of a UK first class bachelors' degree.
+% \sectionsep
+
+% \subsection{Industrial Visit}
+% \descript{Infosys Pune}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% I was as one of the students for industrial training, where 28 students were chosen out of 2000.
+% \sectionsep
+
+% Recent Projects
+\cvsection{Recent Projects} 
+
+\subsection{Partify}
+
+Music control Android Application for small parties. Host can share party code and participants can join and queue tracks from Spotify. Queuing is modified based on participant interest using a up-vote \& down-vote functionality similar to Reddit. Application includes integration with Spotify API and native music player.
+\sectionsep
+
+\subsection{ANA Vitals - Final Year \\
+Design Project}
+
+Hardware Module that collects 5 key vitals (Heart Rate, Blood-pressure, Blood Oxygenation, Temperature \& Respiration Rate) and Android application for communication (Bluetooth \& Websockets) \& visuals 
+
+
+% Column two
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+% Experience
+\cvsection{Work Experience}
+
+\runsubsection{Software Development Engineer, Intern} \\
+\descript{Yahoo}
+\cvevent{May '19 – Aug '19 \& Jan '20 - Aug '20}{Sunnyvale, California} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed new features and fixed bug targeted towards production within the Yahoo Mail Android application 
+\item Involved in a major development cycles involving architectural changes and codebase migration towards a Flux-Redux architectural pattern
+\item Worked on the components \& experience surrounding the message list and message view pages
+\item Developed light \& dark theaming functionality
+\item Built new product additive from ground-up within the Yahoo Mail Android application. Effort included Google Maps API integration with core Yahoo Mail platform APIs to enhance deals recognition and user experience
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Agile Software Engineer, Intern} \\
+\descript{Tribalscale}
+\cvevent{Sep '18 – Dec '18}{Toronto, Canada} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed micro-services using Spring framework, Mobile applications \& FireTV applications formultiple client \& internal projects
+\item Uprooted and optimized the CI/CD process for multiple projects within the company using Pivotal’s Concourse 1.0 \& 2.0 platform as well as Bitrise
+\item Practiced strict TDD, XP \& Agile development principles through all the projects
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Software Engineer, Intern} \\
+\descript{Aterica Health}
+\cvevent{Jan '17 – Jan '18}{Waterloo, Canada} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Introduced - developed - fixed features \& bugs for the mobile applications (Android \& iOS)
+\item Involved in the development of features involving the Bluetooth stack, Location Services, Notifications and UI features
+\item Developed CI/CD process for the mobile applications and the Back-end platform using CircleCI
+\item Practiced strict TDD \& Agile development principles through the code delivery cycles
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Mechatronics Engineer, Intern} \\
+\descript{UGo Laboratories}
+\cvevent{May '16 – Aug '16}{Montreal, Canada} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Built a POS android application for item selection and payment processing using Moneris Payment solutions
+\item Help build the mechanical smoothie mixer arm and developed its functionality using an Arduino board and several other electrical peripherals
+\item Re-designed \& wired the control box with a better and more standardized wiring and optimized the electrical components based on the voltage and current requirements.
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}  
